@@ -1,0 +1,197 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      320s
+      431s
+      320s
+      431s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 160.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      object Layout3: TLayout
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 431.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object ToolBar1: TToolBar
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lblStatus: TLabel
+            Align = Contents
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 312.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'Status'
+          end
+          object SpeedButton1: TSpeedButton
+            Align = Left
+            Size.Width = 65.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'buttonstyle'
+            Text = 'Down'
+            OnClick = SpeedButton1Click
+          end
+          object SpeedButton2: TSpeedButton
+            Align = Right
+            Position.X = 255.000000000000000000
+            Size.Width = 65.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'buttonstyle'
+            Text = 'Upload'
+          end
+        end
+        object Layout1: TLayout
+          Align = Top
+          Position.Y = 48.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label1: TLabel
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 82.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Imagem: '
+          end
+          object cbxImagens: TComboBox
+            Align = Client
+            Items.Strings = (
+              '001.jpg'
+              '002.jpg'
+              '003.jpg'
+              '004.jpg')
+            Margins.Top = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 230.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+          object Layout2: TLayout
+            Align = Top
+            Size.Width = 320.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object pgbProgresso: TProgressBar
+              Align = Top
+              Orientation = Horizontal
+              Size.Width = 320.000000000000000000
+              Size.Height = 10.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+        end
+        object Image1: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 287.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object ToolBar2: TToolBar
+          Align = Bottom
+          Position.Y = 383.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object lblMensagem: TLabel
+            Align = Contents
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 4.000000000000000000
+            Size.Width = 312.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'Erros'
+          end
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 160.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      object Button1: TButton
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 18.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Download PDF'
+        OnClick = Button1Click
+      end
+      object Layout4: TLayout
+        Align = Top
+        Size.Width = 320.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object pgbProgressoPDF: TProgressBar
+          Align = Top
+          Orientation = Horizontal
+          Size.Width = 320.000000000000000000
+          Size.Height = 10.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+end
